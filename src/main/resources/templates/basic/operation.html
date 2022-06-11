@@ -14,12 +14,12 @@
     </li>
     <li>비교 연산
         <ul>
-            <li>1 > 10 = <span th:text="1 &gt; 10"></span></li>
-            <li>1 gt 10 = <span th:text="1 gt 10"></span></li>
-            <li>1 >= 10 = <span th:text="1 >= 10"></span></li>
-            <li>1 ge 10 = <span th:text="1 ge 10"></span></li>
-            <li>1 == 10 = <span th:text="1 == 10"></span></li>
-            <li>1 != 10 = <span th:text="1 != 10"></span></li>
+            <li>1 > 10 = <span th:text="1 &gt; 10"></span></li> <!-- > -->
+            <li>1 gt 10 = <span th:text="1 gt 10"></span></li> <!-- > -->
+            <li>1 >= 10 = <span th:text="1 >= 10"></span></li> <!-- >= -->
+            <li>1 ge 10 = <span th:text="1 ge 10"></span></li> <!-- >= -->
+            <li>1 == 10 = <span th:text="1 == 10"></span></li> <!-- == -->
+            <li>1 != 10 = <span th:text="1 != 10"></span></li> <!-- != -->
         </ul>
     </li>
     <li>조건식
@@ -42,3 +42,9 @@
 </ul>
 </body>
 </html>
+
+<!--
+    ?:(Elvis 연산자) : null 값 대신 지정할 디폴트 값을 지정할 수 있다.
+    _ : No-Operation, 아무동작도 안하게끔 설정할 수 있다. => 기존의 데이터 출려
+
+-->
