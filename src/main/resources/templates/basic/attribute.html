@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>속성 설정</h1>
+<input type="text" name="mock" th:name="userA" />
+<h1>속성 추가</h1>
+- th:attrappend = <input type="text" class="text" th:attrappend="class='large'" /><br/>
+- th:attrprepend = <input type="text" class="text" th:attrprepend="class='large '" /><br/>
+- th:classappend = <input type="text" class="text" th:classappend="large" / ><br/>
+<h1>checked 처리</h1>
+- checked o <input type="checkbox" name="active" th:checked="true" /><br/>
+- checked x <input type="checkbox" name="active" th:checked="false" /><br/>
+- checked=false <input type="checkbox" name="active" checked="false" /><br/>
+</body>
+</html>
+
+<!--
+    th: 를 통해 기존 값을 대체 한다.
+    th:name ${data} 처럼 값을 넣었을 때 null 이라면 기존에 써두었던 name 값으로
+    값이 있다면 name을 th:name으로 교환하게 되는 것이다.
+
+    th:attrapeend 는 기존 값에 더하는 기능이다.
+    th:classappend 도 기존 class 값에 더하는 기능이다.
+-->
